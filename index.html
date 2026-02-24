@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skin and Smile Dental Clinic offers modern dental and skin care treatments in one trusted clinic.">
+    <meta name="keywords" content="dental clinic, skin clinic, whitening, braces, facial, laser treatment">
+    <meta name="author" content="Skin and Smile Dental Clinic">
+    <title>Skin and Smile Dental Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <!-- Contains logo, navigation, and language selector -->
+    <header>
+        <div class="container nav-wrap">
+            <div class="brand">
+                <img class="brand-logo" src="clinic-logo.jpg" alt="Skin and Smile Dental Clinic logo">
+                <span data-i18n="brand">Skin and Smile Dental Clinic</span>
+            </div>
+            <nav>
+                <a href="#home" data-i18n="navHome">Home</a>
+                <a href="#services" data-i18n="navServices">Services</a>
+                <a href="#about" data-i18n="navAbout">About</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </nav>
+            <select class="lang-switch" id="languageSelect" aria-label="Language selector">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- ===== MAIN PAGE CONTENT ===== -->
+    <main id="home">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow" data-i18n="heroEyebrow">Dental + Skin Care in One Place</span>
+                    <h1 data-i18n="heroTitle">Healthy skin. Confident smile. Expert care for every visit.</h1>
+                    <p class="lead" data-i18n="heroLead">Skin and Smile Dental Clinic combines advanced dental treatment and personalized skin care so you can look and feel your best in one trusted clinic.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="tel:+971564233443" data-i18n="callNow">Call Now</a>
+                        <a class="btn btn-secondary" href="#services" data-i18n="viewServices">View Services</a>
+                    </div>
+                </div>
+                <aside class="hero-card">
+                    <img class="hero-photo" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Modern dental clinic interior">
+                    <h3 data-i18n="clinicHoursTitle">Clinic Hours</h3>
+                    <ul class="hero-list">
+                        <li data-i18n="hours1">Monday - Thursday & Saturday - Sunday: 7:00 AM - 10:00 PM</li>
+                        <li data-i18n="hours2">Friday: 1:00 PM - 10:00 PM</li>
+                        <li data-i18n="hours3">Same-day consults available</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <!-- Each card links to a separate page inside /services -->
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
+                <p class="section-sub" data-i18n="servicesSub">Comprehensive care using modern technology, sterile protocols, and a patient-first approach.</p>
+                <div class="cards">
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="generalDentistry">General Dentistry</h3>
+                            <p class="service-desc" data-i18n="generalDesc">Routine checkups, deep cleaning, and cavity care to keep your smile healthy.</p>
+                        </div>
+                        <a class="service-link" href="services/general-dentistry.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="cosmeticDentistry">Cosmetic Dentistry</h3>
+                            <p class="service-desc" data-i18n="cosmeticDesc">Whitening, veneers, and smile design to improve aesthetics and confidence.</p>
+                        </div>
+                        <a class="service-link" href="services/cosmetic-dentistry.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="orthodontics">Orthodontics</h3>
+                            <p class="service-desc" data-i18n="orthoDesc">Braces and clear aligners to align teeth and improve bite function.</p>
+                        </div>
+                        <a class="service-link" href="services/orthodontics.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="facialTreatments">Facial Treatments</h3>
+                            <p class="service-desc" data-i18n="facialDesc">Hydra facial, acne programs, and rejuvenation for healthier skin.</p>
+                        </div>
+                        <a class="service-link" href="services/facial-treatments.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="laserProcedures">Laser Procedures</h3>
+                            <p class="service-desc" data-i18n="laserDesc">Advanced laser solutions for pigmentation, scars, and hair reduction.</p>
+                        </div>
+                        <a class="service-link" href="services/laser-procedures.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                    <article class="card service-card">
+                        <div>
+                            <h3 data-i18n="skinConsultation">Skin Consultation</h3>
+                            <p class="service-desc" data-i18n="consultDesc">Personalized skin analysis and treatment planning with progress reviews.</p>
+                        </div>
+                        <a class="service-link" href="services/skin-consultation.html" data-i18n="learnMore">Learn More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section>
+            <div class="container">
+                <h2 class="section-title" data-i18n="galleryTitle">Clinic Gallery</h2>
+                <p class="section-sub" data-i18n="gallerySub">A quick look at our clean, modern, and patient-friendly clinic environment.</p>
+                <div class="gallery">
+                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=80" alt="Dentist and patient during consultation">
+                    <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=900&q=80" alt="Skincare treatment in clinic room">
+                    <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&w=900&q=80" alt="Dental treatment setup with modern tools">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="aboutTitle">Why Patients Choose Us</h2>
+                <div class="about">
+                    <div class="about-panel">
+                        <p data-i18n="aboutLead">Our clinic brings dental and dermatology professionals together for efficient, complete care under one roof.</p>
+                        <ul>
+                            <li data-i18n="aboutPoint1">Licensed and experienced dentists and skin specialists</li>
+                            <li data-i18n="aboutPoint2">Strict sterilization and safety standards</li>
+                            <li data-i18n="aboutPoint3">Friendly team and transparent treatment plans</li>
+                            <li data-i18n="aboutPoint4">Comfort-first treatment rooms and modern equipment</li>
+                        </ul>
+                    </div>
+                    <div class="about-panel">
+                        <h3 data-i18n="snapshotTitle">Clinic Snapshot</h3>
+                        <div class="stats">
+                            <div class="stat">
+                                <strong>8+</strong>
+                                <span data-i18n="yearsService">Years of Service</span>
+                            </div>
+                            <div class="stat">
+                                <strong>6k+</strong>
+                                <span data-i18n="happyPatients">Happy Patients</span>
+                            </div>
+                            <div class="stat">
+                                <strong>4.5/5</strong>
+                                <span data-i18n="avgRating">Average Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title" data-i18n="feedbackTitle">Patient Feedback</h2>
+                <div class="testimonials">
+                    <article class="quote">
+                        <p data-i18n="quote1">"My braces and skin treatment were both handled so smoothly. The team is kind and professional."</p>
+                        <small>- Angela R.</small>
+                    </article>
+                    <article class="quote">
+                        <p data-i18n="quote2">"I love the results of my whitening and acne care package. Very clean clinic and friendly staff."</p>
+                        <small>- Mark T.</small>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contactTitle">Contact Us</h2>
+                <div class="contact">
+                    <div class="contact-card">
+                        <p data-i18n="addressLine"><strong>Address:</strong> Al Satwa, Dubai UAE</p>
+                        <p data-i18n="phoneLine"><strong>Phone:</strong> +971 56 423 3443</p>
+                        <p data-i18n="emailLine"><strong>Email:</strong> skinandsmiledentalclinic@gmail.com</p>
+                        <p data-i18n="followUs"><strong>Follow Us:</strong></p>
+                        <div class="social-links">
+                            <a class="social-btn whatsapp" href="https://wa.me/971564233443?text=Hi%20Skin%20and%20Smiles%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp">
+                            </a>
+                            <a class="social-btn" href="https://www.facebook.com/profile.php?id=61550576527032" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook">
+                            </a>
+                            <a class="social-btn" href="https://www.instagram.com/skinandsmiledentalclinic/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <p data-i18n="mapTitle"><strong>Our Location:</strong></p>
+                        <p data-i18n="mapHint">Use the map below to get directions to the clinic.</p>
+                        <a class="btn btn-secondary" href="https://maps.google.com/?q=Al+Satwa,+Dubai,+UAE" target="_blank" rel="noopener noreferrer" data-i18n="openMap">Open in Google Maps</a>
+                        <iframe
+                            class="map-frame"
+                            title="Clinic location map"
+                            src="https://maps.google.com/maps?q=Al%20Satwa%2C%20Dubai%2C%20UAE&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating quick action buttons for mobile users -->
+    <div class="mobile-quick-actions" aria-label="Quick mobile actions">
+        <a class="primary" href="tel:+971564233443" data-i18n="mobileCall">Call</a>
+        <a class="whatsapp" href="https://wa.me/971564233443?text=Hi%20Skin%20and%20Smiles%20Dental%20Clinic%2C%20I%20want%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/skinandsmiledentalclinic/" target="_blank" rel="noopener noreferrer" data-i18n="mobileInstagram">Instagram</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <span data-i18n="footerText">Skin and Smiles Dental Clinic. All rights reserved.</span> <span id="year"></span>
+    </footer>
+    <script>
+        // ===== LANGUAGE SYSTEM =====
+        // Edit text here if you want to change wording in English/Arabic.
+        const translations = {
+            en: {
+                pageTitle: "Skin and Smile Dental Clinic",
+                pageDescription: "Skin and Smile Dental Clinic offers modern dental and skin care treatments in one trusted clinic.",
+                brand: "Skin and Smile Dental Clinic",
+                navHome: "Home",
+                navServices: "Services",
+                navAbout: "About",
+                navContact: "Contact",
+                heroEyebrow: "Dental + Skin Care in One Place",
+                heroTitle: "Healthy skin. Confident smile. Expert care for every visit.",
+                heroLead: "Skin and Smile Dental Clinic combines advanced dental treatment and personalized skin care so you can look and feel your best in one trusted clinic.",
+                callNow: "Call Now",
+                viewServices: "View Services",
+                clinicHoursTitle: "Clinic Hours",
+                hours1: "Monday - Thursday & Saturday - Sunday: 7:00 AM - 10:00 PM",
+                hours2: "Friday: 1:00 PM - 10:00 PM",
+                hours3: "Same-day consults available",
+                servicesTitle: "Our Services",
+                servicesSub: "Comprehensive care using modern technology, sterile protocols, and a patient-first approach.",
+                learnMore: "Learn More",
+                generalDentistry: "General Dentistry",
+                generalDesc: "Routine checkups, deep cleaning, and cavity care to keep your smile healthy.",
+                general1: "<strong>Tooth Cleaning:</strong> Cleans teeth using advanced products tested worldwide.",
+                general2: "<strong>Dental Fillings:</strong> Repairs cavities and protects the tooth from further decay.",
+                general3: "<strong>Oral Checkup:</strong> Early detection of gum and tooth problems before they worsen.",
+                cosmeticDentistry: "Cosmetic Dentistry",
+                cosmeticDesc: "Whitening, veneers, and smile design to improve aesthetics and confidence.",
+                cosmetic1: "<strong>Teeth Whitening:</strong> Brightens stained teeth for a cleaner, whiter smile.",
+                cosmetic2: "<strong>Veneers:</strong> Covers chipped or uneven teeth for a smooth appearance.",
+                cosmetic3: "<strong>Smile Design:</strong> Creates a custom treatment plan based on facial features.",
+                orthodontics: "Orthodontics",
+                orthoDesc: "Braces and clear aligners to align teeth and improve bite function.",
+                ortho1: "<strong>Metal Braces:</strong> Straightens teeth and corrects bite alignment over time.",
+                ortho2: "<strong>Clear Aligners:</strong> Transparent trays that gradually move teeth with comfort.",
+                ortho3: "<strong>Bite Correction:</strong> Improves chewing and jaw balance for long-term oral health.",
+                facialTreatments: "Facial Treatments",
+                facialDesc: "Hydra facial, acne programs, and rejuvenation for healthier skin.",
+                facial1: "<strong>Hydra Facial:</strong> Deep-cleans pores while hydrating and soothing the skin.",
+                facial2: "<strong>Acne Care:</strong> Controls breakouts and reduces marks with guided treatment.",
+                facial3: "<strong>Skin Rejuvenation:</strong> Improves tone, texture, and glow with clinical methods.",
+                laserProcedures: "Laser Procedures",
+                laserDesc: "Advanced laser solutions for pigmentation, scars, and hair reduction.",
+                laser1: "<strong>Pigmentation Laser:</strong> Helps fade dark spots and uneven skin tone.",
+                laser2: "<strong>Scar Reduction:</strong> Smooths acne scars and improves skin texture.",
+                laser3: "<strong>Hair Reduction:</strong> Targets hair follicles for long-term hair control.",
+                skinConsultation: "Skin Consultation",
+                consultDesc: "Personalized skin analysis and treatment planning with progress reviews.",
+                consult1: "<strong>Skin Analysis:</strong> Identifies your skin type, concerns, and treatment goals.",
+                consult2: "<strong>Routine Planning:</strong> Creates a daily care routine suited to your skin.",
+                consult3: "<strong>Progress Review:</strong> Tracks improvements and adjusts treatment as needed.",
+                galleryTitle: "Clinic Gallery",
+                gallerySub: "A quick look at our clean, modern, and patient-friendly clinic environment.",
+                aboutTitle: "Why Patients Choose Us",
+                aboutLead: "Our clinic brings dental and dermatology professionals together for efficient, complete care under one roof.",
+                aboutPoint1: "Licensed and experienced dentists and skin specialists",
+                aboutPoint2: "Strict sterilization and safety standards",
+                aboutPoint3: "Friendly team and transparent treatment plans",
+                aboutPoint4: "Comfort-first treatment rooms and modern equipment",
+                snapshotTitle: "Clinic Snapshot",
+                yearsService: "Years of Service",
+                happyPatients: "Happy Patients",
+                avgRating: "Average Rating",
+                feedbackTitle: "Patient Feedback",
+                quote1: "\"My braces and skin treatment were both handled so smoothly. The team is kind and professional.\"",
+                quote2: "\"I love the results of my whitening and acne care package. Very clean clinic and friendly staff.\"",
+                contactTitle: "Contact Us",
+                addressLine: "<strong>Address:</strong> Al Satwa, Dubai UAE",
+                phoneLine: "<strong>Phone:</strong> +971 56 423 3443",
+                emailLine: "<strong>Email:</strong> skinandsmiledentalclinic@gmail.com",
+                followUs: "<strong>Follow Us:</strong>",
+                mapTitle: "<strong>Our Location:</strong>",
+                mapHint: "Use the map below to get directions to the clinic.",
+                openMap: "Open in Google Maps",
+                mobileCall: "Call",
+                mobileInstagram: "Instagram",
+                footerText: "Skin and Smiles Dental Clinic. All rights reserved."
+            },
+            ar: {
+                pageTitle: "عيادة سكين آند سمايل للأسنان",
+                pageDescription: "تقدم عيادة سكين آند سمايل علاجات حديثة للأسنان والبشرة في عيادة واحدة موثوقة.",
+                brand: "عيادة سكين آند سمايل للأسنان",
+                navHome: "الرئيسية",
+                navServices: "الخدمات",
+                navAbout: "من نحن",
+                navContact: "اتصل بنا",
+                heroEyebrow: "العناية بالأسنان والبشرة في مكان واحد",
+                heroTitle: "بشرة صحية. ابتسامة واثقة. رعاية خبيرة في كل زيارة.",
+                heroLead: "تجمع عيادة سكين آند سمايل بين علاجات الأسنان المتقدمة والعناية الشخصية بالبشرة لتبدو وتشعر بأفضل حال في عيادة واحدة موثوقة.",
+                callNow: "اتصل الآن",
+                viewServices: "عرض الخدمات",
+                clinicHoursTitle: "ساعات العمل",
+                hours1: "من الاثنين إلى الخميس والسبت إلى الأحد: 7:00 صباحًا - 10:00 مساءً",
+                hours2: "الجمعة: 1:00 مساءً - 10:00 مساءً",
+                hours3: "مواعيد استشارة في نفس اليوم متاحة",
+                servicesTitle: "خدماتنا",
+                servicesSub: "رعاية شاملة باستخدام تقنيات حديثة ومعايير تعقيم صارمة ونهج يضع المريض أولًا.",
+                learnMore: "اعرف المزيد",
+                generalDentistry: "طب الأسنان العام",
+                generalDesc: "فحوصات دورية وتنظيف عميق وعلاج للتسوس للحفاظ على ابتسامتك صحية.",
+                general1: "<strong>تنظيف الأسنان:</strong> تنظيف الأسنان بمنتجات متطورة ومجربة عالميًا.",
+                general2: "<strong>حشوات الأسنان:</strong> إصلاح التسوس وحماية السن من التدهور لاحقًا.",
+                general3: "<strong>فحص الفم:</strong> اكتشاف مبكر لمشكلات اللثة والأسنان قبل تفاقمها.",
+                cosmeticDentistry: "تجميل الأسنان",
+                cosmeticDesc: "تبييض وقشور تجميلية وتصميم الابتسامة لتحسين المظهر والثقة.",
+                cosmetic1: "<strong>تبييض الأسنان:</strong> تفتيح الأسنان المصطبغة للحصول على ابتسامة أنظف وأكثر بياضًا.",
+                cosmetic2: "<strong>القشور التجميلية:</strong> تغطية الأسنان المتشققة أو غير المتساوية لمظهر ناعم.",
+                cosmetic3: "<strong>تصميم الابتسامة:</strong> خطة علاج مخصصة بناءً على ملامح الوجه.",
+                orthodontics: "تقويم الأسنان",
+                orthoDesc: "تقويم معدني ومصففات شفافة لمحاذاة الأسنان وتحسين الإطباق.",
+                ortho1: "<strong>التقويم المعدني:</strong> تقويم الأسنان وتصحيح الإطباق تدريجيًا.",
+                ortho2: "<strong>المصففات الشفافة:</strong> قوالب شفافة تحرك الأسنان تدريجيًا براحة.",
+                ortho3: "<strong>تصحيح العضة:</strong> تحسين المضغ وتوازن الفك لصحة فموية طويلة الأمد.",
+                facialTreatments: "علاجات الوجه",
+                facialDesc: "هيدرا فيشل وبرامج حب الشباب وتجديد البشرة لصحة وإشراقة أفضل.",
+                facial1: "<strong>هيدرا فيشل:</strong> تنظيف عميق للمسام مع ترطيب وتهدئة البشرة.",
+                facial2: "<strong>عناية حب الشباب:</strong> التحكم في البثور وتقليل الآثار بخطة علاجية موجهة.",
+                facial3: "<strong>تجديد البشرة:</strong> تحسين اللون والملمس والإشراقة بطرق سريرية.",
+                laserProcedures: "إجراءات الليزر",
+                laserDesc: "حلول ليزر متقدمة للتصبغات والندبات وتقليل الشعر.",
+                laser1: "<strong>ليزر التصبغات:</strong> يساعد على تخفيف البقع الداكنة وتوحيد لون البشرة.",
+                laser2: "<strong>تقليل الندبات:</strong> تنعيم آثار حب الشباب وتحسين ملمس البشرة.",
+                laser3: "<strong>تقليل الشعر:</strong> استهداف بصيلات الشعر للتحكم طويل الأمد.",
+                skinConsultation: "استشارة البشرة",
+                consultDesc: "تحليل مخصص للبشرة وخطة علاج مع متابعة مستمرة للتقدم.",
+                consult1: "<strong>تحليل البشرة:</strong> تحديد نوع البشرة والمشكلات والأهداف العلاجية.",
+                consult2: "<strong>خطة روتين:</strong> إعداد روتين يومي مناسب لبشرتك.",
+                consult3: "<strong>متابعة التقدم:</strong> متابعة التحسن وتعديل العلاج عند الحاجة.",
+                galleryTitle: "معرض العيادة",
+                gallerySub: "نظرة سريعة على بيئة عيادتنا النظيفة والحديثة والمريحة للمرضى.",
+                aboutTitle: "لماذا يختارنا المرضى",
+                aboutLead: "تجمع عيادتنا بين أخصائيي الأسنان والجلدية لتقديم رعاية متكاملة بكفاءة تحت سقف واحد.",
+                aboutPoint1: "أطباء أسنان وأخصائيو بشرة مرخصون وذوو خبرة",
+                aboutPoint2: "معايير صارمة للتعقيم والسلامة",
+                aboutPoint3: "فريق ودود وخطط علاج واضحة",
+                aboutPoint4: "غرف علاج مريحة ومعدات حديثة",
+                snapshotTitle: "لمحة عن العيادة",
+                yearsService: "سنوات الخدمة",
+                happyPatients: "مرضى سعداء",
+                avgRating: "متوسط التقييم",
+                feedbackTitle: "آراء المرضى",
+                quote1: "\"تم التعامل مع تقويم الأسنان وعلاج البشرة بسلاسة كبيرة. الفريق لطيف ومحترف.\"",
+                quote2: "\"أحببت نتائج التبييض وباقة علاج حب الشباب. عيادة نظيفة جدًا وطاقم ودود.\"",
+                contactTitle: "تواصل معنا",
+                addressLine: "<strong>العنوان:</strong> السطوة، دبي، الإمارات",
+                phoneLine: "<strong>الهاتف:</strong> +971 56 423 3443",
+                emailLine: "<strong>البريد الإلكتروني:</strong> skinandsmiledentalclinic@gmail.com",
+                followUs: "<strong>تابعنا:</strong>",
+                mapTitle: "<strong>موقعنا:</strong>",
+                mapHint: "استخدم الخريطة أدناه للحصول على الاتجاهات إلى العيادة.",
+                openMap: "فتح في خرائط Google",
+                mobileCall: "اتصال",
+                mobileInstagram: "إنستغرام",
+                footerText: "عيادة سكين آند سمايل للأسنان. جميع الحقوق محفوظة."
+            }
+        };
+
+        // Dropdown element in header.
+        const languageSelect = document.getElementById("languageSelect");
+
+        // Applies selected language to:
+        // 1) HTML direction (LTR/RTL)
+        // 2) Page title + meta description
+        // 3) All elements with data-i18n attribute
+        function applyLanguage(language) {
+            const selectedLanguage = translations[language] ? language : "en";
+            const dictionary = translations[selectedLanguage];
+            const root = document.documentElement;
+
+            root.lang = selectedLanguage;
+            root.dir = selectedLanguage === "ar" ? "rtl" : "ltr";
+            document.title = dictionary.pageTitle;
+            document
+                .querySelector('meta[name="description"]')
+                .setAttribute("content", dictionary.pageDescription);
+
+            // Replace on-page text for all tagged elements.
+            document.querySelectorAll("[data-i18n]").forEach((element) => {
+                const key = element.getAttribute("data-i18n");
+                if (dictionary[key]) {
+                    element.innerHTML = dictionary[key];
+                }
+            });
+
+            languageSelect.value = selectedLanguage;
+            localStorage.setItem("preferredLanguage", selectedLanguage);
+        }
+
+        // Keep user language choice after page refresh.
+        const savedLanguage = localStorage.getItem("preferredLanguage") || "en";
+        applyLanguage(savedLanguage);
+
+        // Listen for user changing the language dropdown.
+        languageSelect.addEventListener("change", (event) => {
+            applyLanguage(event.target.value);
+        });
+
+        // Auto-update footer year.
+        document.getElementById("year").textContent = "| " + new Date().getFullYear();
+    </script>
+</body>
+</html>
