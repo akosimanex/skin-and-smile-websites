@@ -6,6 +6,7 @@
     <meta name="description" content="General dentistry services at Skin and Smile Dental Clinic in Dubai.">
     <title>General Dentistry | Skin and Smile Dental Clinic</title>
     <style>
+        /* Color settings used across this page */
         :root {
             --bg: #0a0a0a;
             --surface: #131313;
@@ -14,6 +15,7 @@
             --accent: #c9a24a;
             --line: #3a2f18;
         }
+        /* Base reset + page-level defaults */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: "Trebuchet MS", "Segoe UI", sans-serif;
@@ -25,6 +27,7 @@
             flex-direction: column;
         }
         .container { width: min(920px, 92%); margin: 0 auto; }
+        /* Top bar with clinic name/logo */
         .top {
             padding: 22px 0;
             border-bottom: 1px solid var(--line);
@@ -35,16 +38,61 @@
         main {
             flex: 1;
         }
-        .card {
+        /* Main service card wrapper */
+       /* .card {
             background: var(--surface);
             border: 1px solid var(--line);
             border-radius: 16px;
             padding: 24px;
         }
+        /* Service text + image layout */
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 18px;
+            align-items: start;
+        }
+        .service-text p,
+        .service-text ul {
+            max-width: 60ch;
+        }
+        .service-text {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 16px 18px;
+            background: rgba(26, 26, 26, 0.45);
+            line-height: 1.7;
+        }
+        .service-text p {
+            margin-bottom: 14px;
+            font-size: 1.04rem;
+            text-wrap: pretty;
+        }
+        .service-text ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        .service-text li {
+            margin-bottom: 10px;
+        }
+        /* Service photo on right side (desktop) */
+        .service-photo {
+            display: block;
+            width: min(100%, 340px);
+            max-width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            margin: 4px 0 0;
+            transform: translateX(20px) scale(1.08);
+            transform-origin: center;
+        }
         h1 { font-size: clamp(1.7rem, 3vw, 2.3rem); margin-bottom: 10px; }
         p { color: var(--muted); margin-bottom: 18px; }
         ul { padding-left: 18px; color: var(--muted); margin-bottom: 18px; }
         li { margin-bottom: 8px; }
+        /* Button row under service content */
         .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
         .btn {
             text-decoration: none;
@@ -56,6 +104,7 @@
             font-weight: 700;
         }
         .btn.primary { background: var(--accent); border-color: var(--accent); color: #111; }
+        /* Footer with socials/contact/hours */
         .site-footer {
             margin-top: 22px;
             border-top: 1px solid var(--line);
@@ -134,7 +183,17 @@
             height: 18px;
             display: block;
         }
+        /* Mobile adjustments */
         @media (max-width: 720px) {
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+            .service-photo {
+                width: 100%;
+                max-height: 280px;
+                margin: 2px 0 16px;
+                transform: none;
+            }
             .footer-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -154,6 +213,7 @@
     </style>
 </head>
 <body>
+    <!-- HEADER: clinic logo and name -->
     <header class="top">
         <div class="container brand">
             <img src="../clinic-logo.jpg" alt="Clinic logo">
@@ -161,21 +221,33 @@
         </div>
     </header>
 
+    <!-- MAIN SERVICE CONTENT: edit title, description, bullet points, and image here -->
     <main class="container">
         <section class="card">
+            <!-- Service page title -->
             <h1>General Dentistry</h1>
-            <p>Complete preventive and restorative dental care to protect your teeth and gums.</p>
-            <ul>
-                <li>Professional tooth cleaning and plaque removal</li>
-                <li>Dental fillings to treat cavities early</li>
-                <li>Routine oral checkups and gum health assessment</li>
-            </ul>
+            <div class="service-content">
+                <div class="service-text">
+                    <!-- Main service description paragraph -->
+                    <p>Complete preventive and restorative dental care to protect your teeth and gums.</p>
+                    <!-- Service bullet points -->
+                    <ul>
+                        <li>Professional tooth cleaning and plaque removal</li>
+                        <li>Dental fillings to treat cavities early</li>
+                        <li>Routine oral checkups and gum health assessment</li>
+                    </ul>
+                </div>
+                <!-- Service image: change src + alt text -->
+                <img class="service-photo" src="../generaldentist.jpg" alt="General dentistry treatment at Skin and Smile Dental Clinic">
+            </div>
+            <!-- Action buttons -->
             <div class="actions">
                 <a class="btn" href="../index.html#services">Back to Services</a>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER: social links, contact details, and clinic schedule -->
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-brand">
@@ -213,4 +285,3 @@
     </footer>
 </body>
 </html>
-
