@@ -503,6 +503,31 @@
             color: #e8d3a0;
         }
 
+        .review-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .stars {
+            color: #f5c54b;
+            letter-spacing: 1px;
+            font-size: 0.95rem;
+            line-height: 1;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
+        }
+
+        .review-source {
+            color: #d4bc84;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            margin-top: 0;
+        }
+
         .quote small {
             display: block;
             margin-top: 10px;
